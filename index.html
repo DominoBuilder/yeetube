@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <!-- Please add @dominoalt to this repl -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>YeeTube beta v0.3</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="image.ico">
+	<style></style>
+  <!-- To eric: if you want to move the css to the style.css file, fine with me. if it works, it works. -->
+  <!-- to will: ok cool beans. ill do it when i come back from golf -->
+  </head>
+  <body onresize="setBarPos()"><br>
+  <span id="topbAr">
+    <button id="mode" onclick="switchMode()" class="button">Turn On Dark Mode!</button>&nbsp;&nbsp;&nbsp;<button class="button" style="height:25px; width: 140px;" onclick="window.location.href = 'feedback.html'">Submit feedback</button><div class="right"><span class="w-t">YeeTube now has <b id="vnum">####</b> visits.            </span></div></span><!--I changed that cuz now its more accurate for  -->
+    <div id = "yeee">
+		<b id = "bold">
+			<span id = "YeeTube">
+				<span class="ytl w-t">Yee</span><span class="w-t"><span id="redSquare"><span class="ytl" id="Tube">Tube</span></span></span>
+			</span> <span class="w-t">
+			beta v0.3</span>
+		</b>
+		<br>
+		<center>
+			<!-- me trying to tidy this: what the h*ll is this (and yes i said h*ll and no it is not really a bad word) -->
+			<input type="text" id="vidurl" size="50">
+			  <button id="run" onclick="loadvid()">
+				  <i class="fa fa-search"></i>
+			  </button>
+			  <button class="button" onclick="loadvid(box.value,true)" style="top:-2px;left:55px"><i class="fa fa-plus-square"></i></button>
+			  <!-- sorry eric i made more inline css... ok ross i fix it-->
+			  <button class="button" id="clear" onclick="clearBox()">Clear</button>
+		</center>
+	</div>
+  <div class="vimeonote"><b><a href="vimeo.html">YeeTube Vimeo</a></b> is now out in alpha! Have fun! (yes i know it doesent work for some videos ill fix it later.)</div>
+	<br>
+	<br>
+	<h2 id="vidshow">
+		<center id="vidtitle" class="w-t">
+			Your video will show up here: 
+    
+		</center>
+		<center><p id="vidauthor"></p></center>
+	</h2>
+    <center>
+      <button class="button" id="mf" onclick="mobileFull()" style="width: 170px">Mobile Fullscreen</button><br>
+		<iframe id="vid" width="560" height="315" src="" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Sorry, your browser doesent support the html tag needed to make YeeTube work. Come back when you have a better browser!</iframe><br><button id="sharevid" onclick="generateShareUrl()">Share This Video</button><br><div id="vdesc"></div>
+	</center>
+    <span id = "footer">
+		<br>
+			<div id = "FoOtEr">
+				<span class="w-t">
+					By William, Eric, and Sasha.   <!-- <a href="about-us.html">About Us</a> --> 
+				</span>
+			</div>
+	</span>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- exited much whoever changed my easter egg, but good job looks much better in dark mode-->
+<p class="w-t">&nbsp;&nbsp;congrats im an easter egg in a very yummy website ok bye noobs</p> 
+<br><br><br><br><br><br><br><br>
+<b class="w-t">&nbsp;&nbsp;man this "easter egg" is real easy to find.</b>
+<p class="w-t">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - William Ross 2020 (most likely)<p>... william your sus its 2021 :(
+  <br>
+  <br>
+  <br>
+  <br>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- do not put elements below the </html> tag sasha-->
+<!-- ok i will not im trying to get the text color to be dependent on the bg color btw, w8 y u detete my easter egg :((-->
