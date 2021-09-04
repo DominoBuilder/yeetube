@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "YTFont";
+}
+
+
+#william {
+  background-color: yellow;
+}
+#sasha {
+  background-color: #a2ff00;
+}
+#eric {
+  background-color: #00a2ff;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#clear {
+  width: 60px;
+  position:relative;
+  top:-2px; 
+  left: 60px;
+}
+#yeee{
+	border-bottom: solid black 5px;
+}
+
+#redSquare:hover {
+	color: #ff0040; 
+}
+#yeeTube:hover {
+	color: #ff0040; 
+}
+#clr{
+  background-color: #c2c2c2;
+  border: 1px solid gray;
+  height: 33px;
+}
+/*why you yeetus deletus my easter eggy?*/
+#silly-super-long-id-that-should-just-be-mark-rober-button-but-made-it-super-long-hahahaha-hehehehe-just-to-be-annoying-hahahahaha {
+	background-color: #00a2ff;
+	color: #a2ff00;
+	border: 3px solid #ff00a2;
+	border-radius: 20px;
+	position: relative;
+	width: 200px;
+	height: 25px;
+	left: 100px;
+}
+/*lelelelel*/
+#silly-super-long-id-that-should-just-be-mark-rober-button-but-made-it-super-long-hahahaha-hehehehe-just-to-be-annoying-hahahahaha:hover {
+	background-color: #a2ff00;
+	color: #ff00a2;
+	border: 3px solid #00a2ff;
+	border-radius: 20px;
+} 
+/* maybe... */
+#YeeTube {
+	  position:relative; 
+	  top:30px; 
+	  left:25px;
+	  font-size: 30px;
+    font-family: "YTFont", Helvetica, sans-serif;
+}
+/*(to will and eric) i added hover affects to the buttons and the logo so it could look better idk if you want me to remove it but i think its good*/
+/*to lee: its good but i kinda fixed it - € |/ | (*/
+/* to hu ever gave feedback, i can infer it was eric because he is the only one that calls me by my last name: ok thanks, oh and when you turn on dark mode and off the hover does not work anymore if i cant fix it will you be able to fix it */
+span:hover {
+	color: #252525; 
+}
+button:hover {
+	color: #808080; 
+	border-color: #808080;
+}
+#run:active {
+  background-color: #b4b4b4;
+}
+#run, .button{
+	height: 34px; 
+	width: 60px; 
+	border: 2px solid black; 
+	background-color: #c2c2c2; 
+	position: relative; 
+	top: -2px;
+}
+#bold {
+	position: relative; 
+	top: -15px;
+}
+#redSquare {
+	background-color: #bd0000; 
+	border-radius: 13px; 
+	padding: 5px 5px 5px 5px; 
+	color: white;
+}
+
+button {
+  border-radius: 50px;
+}
+
+#sendFeedback {
+  width: 370px;
+  height: 50px;
+  font-size: 40px;
+  border: 3px solid black
+}
+
+center {
+	position: relative; top: -25px;
+}
+#footer {
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	background-color: white; 
+	border-top:5px solid black ;
+	text-align: center; 
+	width: 100%; 
+	position: fixed; 
+	left: 0; 
+	bottom: 0;
+}
+#footer #FoOtEr {
+  position: relative;
+  background-color: white;
+}
+#footer span{
+	position: relative; 
+	top: -13px; 
+	font-size: 15pt; 
+	font-weight: 600;
+}
+#video {
+	height: 30px; 
+	border-radius: 2px; 
+	border:1px solid gray; 
+	font-size: 20px;
+}
+#vidurl, #vimurl {
+	height: 23px;
+	font-size: 20px;
+}
+#vidauthor {
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+  bottom: 13px;
+}
+#sharevid {
+  border: 2px solid black;
+  background-color: #c2c2c2;
+  height: 34px;
+  width: 180px;
+}
+
+#mode{
+  height: 25px;
+  width: 144px;
+  position: relative;
+  left: 10px;
+}
+#vdesc {
+  width:50%;
+}
+.right {
+  float: right;
+  position: relative;
+  right: 10px;
+}
+#vnum {
+  font-size: 20pt;
+}
+#topbAr {
+  position: relative;
+  bottom: 10px;
+}
+.ytl {
+  position: relative;
+  top: 4px;
+}
+.vimeonote {
+  text-align: center;
+  height: 20px;
+  width: 100%;
+  color: red;
+  border-bottom-style:solid;
+  border-bottom-width:2px;
+  border-bottom-color:red;
+}
