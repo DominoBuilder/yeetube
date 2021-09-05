@@ -90,7 +90,8 @@ function loadvid(vidd=box.value,newTab=false) {
     req2.send();
   } else if (vidd === "") {
 	  box.value = "Please enter a YouTube URL here!";
-	  setTimeout( function(){ box.value = ""; box.value = "To make it easier for you, We will generate one in 2 sec"; setTimeout(function(){ box.value = ""; rickRoll();}, 2000);}, 2000);  
+	  //yes i re-enabled this but its a rick roll now teehee
+	  setTimeout(function(){box.value = "To make it easier for you, We will generate one in 2 sec"; setTimeout(function(){rickRoll();}, 2000);}, 2000);  
   }
 }
 
