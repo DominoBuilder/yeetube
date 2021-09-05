@@ -39,39 +39,7 @@ if (window.innerWidth < 1035) {
 }
 }
 setBarPos();
-function markRober() {
-	var random = Math.floor(Math.random() * Math.floor(13));
-	random ++;
-	if (random === 1) {
-		box.value = "https://www.youtube.com/watch?v=-k-V3ESHcfA";
-	} else if (random === 2) {
-		box.value = "https://www.youtube.com/watch?v=a_TSR_v07m0&t=917s";
-	} else if (random === 3) {
-		box.value = "https://www.youtube.com/watch?v=wM5NHC97JBw&t=17s";
-	} else if (random === 4) {
-		box.value = "https://www.youtube.com/watch?v=U7nJBFjKqAY&t=24s";
-	} else if (random === 5) {
-		box.value = "https://www.youtube.com/watch?v=Kou7ur5xt_4&t=163s";
-	} else if (random === 6) {
-		box.value = "https://www.youtube.com/watch?v=ugRc5jx80yg&t=2s";
-	} else if (random === 7) {
-		box.value = "https://www.youtube.com/watch?v=PmlRbfSavbI&t=2s";
-	} else if (random === 8) {
-		box.value = "https://www.youtube.com/watch?v=DPZzrlFCD_I&t=3s";
-	} else if (random === 9) {
-		box.value = "https://www.youtube.com/watch?v=oBcxuzdP3rs";
-	} else if (random === 10) {
-		box.value = "https://www.youtube.com/watch?v=6qZWMNW7GmE";
-	} else if (random === 11) {
-		box.value = "https://www.youtube.com/watch?v=xoxhDk-hwuo&t=387s";
-	} else if (random === 12) {
-		box.value = "https://www.youtube.com/watch?v=pFEB0chiuJA&t=11s";
-	} else {//william dont tell sasha what to do!
-	  box.value = "https://www.youtube.com/watch?v=LEZCxxKp0hM";
-	}
 
-	window.scrollTo(0, 0); 
-}
 function loadvid(vidd=box.value,newTab=false) {
   if (vidd !== "") {
     var boxvalue = vidd;
@@ -117,15 +85,21 @@ function loadvid(vidd=box.value,newTab=false) {
     req2.send();
   } else if (vidd === "") {
 	  box.value = "Please enter a YouTube URL here!";
-	  //setTimeout(function(){ box.value = ""; box.value = "To make it easier for you, We will generate one in 1.5 sec"; setTimeout(function(){ box.value = ""; markRober();}, 1500);}, 1500);  
+	  setTimeout(function(){ box.value = ""; box.value = "To make it easier for you, We will generate one in 2 sec"; setTimeout(function(){ box.value = ""; rickRoll();}, 2000);}, 2000);  
   }
 }
+function rickRoll() {
+	box.value = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+	window.scrollTo(0, 0); 
+	loadvid();
+}
 
+// not sure if this works but ill test it but i might not remember
 function generateShareUrl() {
   if (box.value !== "") {
   var boxvalue = box.value;
   var vidid = boxvalue.split("=")[boxvalue.split("=").length-1];
-  prompt("Use this share URL to share videos with your friends!\n\nThis is your share URL:", "https://yeetube.williamross6.repl.co?v=" + vidid);
+  prompt("Use this share URL to share videos with your friends!\n\nThis is your share URL:", "https://dominobuilder.github.io/yeetube?v=" + vidid);
   }
 }
 
