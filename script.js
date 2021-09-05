@@ -32,13 +32,18 @@ if (result !== null) {
 }
 
 function setBarPos() {
-if (window.innerWidth < 1035) {
-  box.style.position = "relative";
-  box.style.left = "50px";
-  button.style.left = "50px";
-}
+	if (window.innerWidth < 1035) {
+	  box.style.position = "relative";
+	  box.style.left = "50px";
+	  button.style.left = "50px";
+	}
 }
 setBarPos();
+function rickRoll() {
+	box.value = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+	window.scrollTo(0, 0); 
+	loadvid();
+}
 
 function loadvid(vidd=box.value,newTab=false) {
   if (vidd !== "") {
@@ -85,13 +90,8 @@ function loadvid(vidd=box.value,newTab=false) {
     req2.send();
   } else if (vidd === "") {
 	  box.value = "Please enter a YouTube URL here!";
-	  setTimeout(function(){ box.value = ""; box.value = "To make it easier for you, We will generate one in 2 sec"; setTimeout(function(){ box.value = ""; rickRoll();}, 2000);}, 2000);  
+	  setTimeout( function(){ box.value = ""; box.value = "To make it easier for you, We will generate one in 2 sec"; setTimeout(function(){ box.value = ""; rickRoll();}, 2000);}, 2000);  
   }
-}
-function rickRoll() {
-	box.value = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-	window.scrollTo(0, 0); 
-	loadvid();
 }
 
 // not sure if this works but ill test it but i might not remember
