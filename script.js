@@ -43,6 +43,7 @@ function rickRoll() {
 	box.value = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 	window.scrollTo(0, 0); 
 	loadvid();
+	alert("hah get rick rolled :P");
 }
 
 function loadvid(vidd=box.value,newTab=false) {
@@ -118,56 +119,37 @@ function switchMode() {
   var footerBackground = document.getElementById("FoOtEr")
   var footerBorder = document.getElementById("footer")
   darkMode = !darkMode;
-
   if (darkMode) {
-
     document.body.style.backgroundColor = "#000000";
-
     button.innerText = "Turn on Light Mode";
-
     for (var k = 0; k < texts.length; k++) {
       texts[k].style.color = "#ffffff";
     }
-
     yeee.style.borderBottomColor = "#ffffff";
-
     for (i = 0; i < buttons.length; i++) {
       buttons[i].style.borderColor = "white"
       buttons[i].style.borderColor = "white"
     }
-
     tube.style.color = "black" // racist xD
-
     footerBackground.style.backgroundColor = "black"
     footerBorder.style.backgroundColor = "black"
     footerBorder.style.borderColor = "white" //this code racist xD
-
-
-
   } else if (darkMode === false) {
-
     document.body.style.backgroundColor = "#ffffff";
-
     button.innerText = "Turn on Dark Mode";
-
   for (var k = 0; k < texts.length; k++) {
       texts[k].style.color = "#000000";
     }
-
     yeee.style.borderBottomColor = "black";
-
     for (i = 0; i < buttons.length; i++) {
       buttons[i].style.borderColor = "black"
       buttons[i].style.color = "black"
     }
-
     footerBackground.style.backgroundColor = "white"
     footerBorder.style.backgroundColor = "white"//very racist lmao XD
     footerBorder.style.borderColor = "black"
-
     tube.style.color = "white" //this code is so racist xD 
   } 
-      
 }
 
 function mobileFull() {
